@@ -25,4 +25,6 @@ jobs:
       # Step 3: Sync website files from GitHub to S3
       - name: Deploy files to S3
         run: |
-          aws s3 sync . s3://carwebsite-deploy --delete --exclude ".git/*" --exclude ".github/*"
+          aws-region: ap-south-2
+aws s3 sync . s3://practice-githubb --delete --exclude ".git/*" --exclude ".github/*"
+
